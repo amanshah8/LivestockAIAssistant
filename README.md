@@ -1,8 +1,8 @@
-# MaweshiAI
+# Livestock AI
 
-MaweshiAI helps farmers describe animal health problems and receive structured AI guidance. The **backend** (FastAPI under `backend/`) uses Groq for text-based livestock health reasoning and optionally Gemini for image observation when an animal image is uploaded. The **frontend** (Next.js under `frontend/`) provides chat, cases, treatment plans, and related UI.
+LivestockAI helps farmers describe animal health problems and receive structured AI guidance. The **backend** (FastAPI under `backend/`) uses Groq for text-based livestock health reasoning and optionally Gemini for image observation when an animal image is uploaded. The **frontend** (Next.js under `frontend/`) provides chat, cases, treatment plans, and related UI.
 
-MaweshiAI is designed for livestock such as goats, cows, buffaloes, sheep, camels, calves, lambs, and similar farm animals. It provides cautious, farmer-friendly guidance and does **not** replace a qualified veterinarian.
+LivestockAI is designed for livestock such as goats, cows, buffaloes, sheep, camels, calves, lambs, and similar farm animals. It provides cautious, farmer-friendly guidance and does **not** replace a qualified veterinarian.
 
 ## Repository layout
 
@@ -35,7 +35,7 @@ The application entrypoint (for example `main.py`) lives under `backend/src/`.
 
 Next.js **requires Node.js ≥ 18.17** (recommended: **20.x**). If `next dev` exits with a Node version error, upgrade Node (for example with [nvm](https://github.com/nvm-sh/nvm): `cd frontend && nvm install && nvm use`, then `npm install && npm run dev`).
 
-Architecture reference: [Maweshi AI App architecture](https://docs.google.com/document/d/1DQssetF3gWAMZX3xntW3tD0Y7nIHcaf9WvqzRqlI4y4/edit).
+Architecture reference: [Livestock AI App architecture](https://docs.google.com/document/d/1DQssetF3gWAMZX3xntW3tD0Y7nIHcaf9WvqzRqlI4y4/edit).
 
 ---
 
@@ -333,7 +333,7 @@ curl -X POST http://127.0.0.1:8000/api/chat \
 
 ## Response Types
 
-MaweshiAI returns one of three response types.
+LivestockAI returns one of three response types.
 
 ### 1. `non_medical`
 
@@ -401,7 +401,7 @@ Used when the user asks something outside livestock health.
 ```json
 {
   "responseType": "false_input",
-  "chatReply": "MaweshiAI only helps with livestock health questions.",
+  "chatReply": "LivestockAI only helps with livestock health questions.",
   "reason": "The user is asking for a recipe, not livestock health guidance."
 }
 ```
@@ -423,7 +423,7 @@ Example:
 ```text
 You > My goat is sick.
 
-MaweshiAI:
+LivestockAI:
 What symptoms is your goat showing?
 How long has your goat been sick?
 ```
@@ -657,4 +657,4 @@ If you opened the `backend` folder directly, use:
 
 ## Disclaimer
 
-MaweshiAI provides general livestock health guidance only. It does not provide a final veterinary diagnosis and does not replace a qualified veterinarian. For urgent, severe, or worsening symptoms, contact a qualified veterinarian immediately.
+LivestockAI provides general livestock health guidance only. It does not provide a final veterinary diagnosis and does not replace a qualified veterinarian. For urgent, severe, or worsening symptoms, contact a qualified veterinarian immediately.
