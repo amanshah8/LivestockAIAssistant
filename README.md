@@ -4,6 +4,10 @@ LivestockAI helps farmers describe animal health problems and receive structured
 
 LivestockAI is designed for livestock such as goats, cows, buffaloes, sheep, camels, calves, lambs, and similar farm animals. It provides cautious, farmer-friendly guidance and does **not** replace a qualified veterinarian.
 
+## UI
+
+<img width="1680" height="890" alt="image" src="https://github.com/user-attachments/assets/ac8259fa-5273-4890-a684-49ba2f5a460e" />
+
 ## Repository layout
 
 | Path | Role |
