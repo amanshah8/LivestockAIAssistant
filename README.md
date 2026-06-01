@@ -8,6 +8,10 @@ LivestockAI is designed for livestock such as goats, cows, buffaloes, sheep, cam
 
 <img width="1680" height="890" alt="image" src="https://github.com/user-attachments/assets/ac8259fa-5273-4890-a684-49ba2f5a460e" />
 
+## Demo
+
+https://livestock-ai-assistant.vercel.app/
+
 ## Repository layout
 
 | Path | Role |
